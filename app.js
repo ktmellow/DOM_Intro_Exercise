@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
       alert("I HATE NUMBERZZZ!");
     } else if (input == konami) {
       alert("YOU ARE AN EVENT HANDLER GURUUUUUUUUU!");
+      input = "";
     }
     // console.log(input);
     // console.log(k.which);
