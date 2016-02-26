@@ -62,28 +62,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // 2-6
   var input = "";
-  var konami = "383840403739373966986597";
-  window.addEventListener('keypress', function(k) {
+  // var konami = "383840403739373966986597";
+  var konami = "38384040373937396665";
+  window.addEventListener('keyup', function(k) {
     input += k.which;
     if (k.which >= 48  && k.which <= 57) {
       alert("I HATE NUMBERZZZ!");
     } else if (input == konami) {
       alert("YOU ARE AN EVENT HANDLER GURUUUUUUUUU!");
     }
-    // console.log(input);
-    // console.log(k.which);
-  });
-
-  window.addEventListener('keydown', function(k) {
-    input += k.which;
-    if (k.which >= 48  && k.which <= 57) {
-      alert("I HATE NUMBERZZZ!");
-    } else if (input == konami) {
-      alert("YOU ARE AN EVENT HANDLER GURUUUUUUUUU!");
-      input = "";
-    }
-    // console.log(input);
-    // console.log(k.which);
+    console.log(input);
+    console.log(k.which);
   });
 
 });
